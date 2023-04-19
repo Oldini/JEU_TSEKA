@@ -1,0 +1,28 @@
+body{
+	background:gray; 
+}
+
+@keyframes Annim {
+	0% {transform: scale(0.5);} 
+	25% {transform: scale(1);}
+	100% {transform: scale(0.5);}
+}
+img{
+	text-align: center;
+	animation-name:  Annim;
+	animation-duration: 5s;
+	animation-iteration-count: infinite; 	
+	border-radius: 150%;
+}
+#image
+{
+	padding: 60px;
+}
+.start {
+    display: block;
+    background-image: url(../img/BOUTON2.png);
+    background-repeat: no-repeat;
+    width: 7.2cm;
+    height: 1.7cm;
+    margin: 0 auto;
+}

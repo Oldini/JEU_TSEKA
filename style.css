@@ -1,0 +1,100 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #000;
+    flex-direction: column;
+}
+
+section{ 
+  background-color:white;
+   padding: 14px;
+    border-radius: 6px;
+    box-shadow: 0 0 50 px rgba(0,0,0,0.1);
+}
+.jeu{
+    width: 500px;
+    height:200px ;
+    border: 1px solid #000;
+    overflow: hidden;
+    border-bottom: 1px solid #18f ;
+
+}
+
+.perso{
+  width: 10px;
+  height: 10px;
+  position: relative;
+  top: 100px;
+}
+
+.animation{
+  animation: personne 500ms infinite;
+}
+
+
+
+
+@keyframes personne {
+
+  0%{
+      top: 100px;
+    }
+    25%{
+      top: 60px;
+    }
+    50%{
+      top: 60px;
+    }
+    100%{
+      top: 100px;
+    }
+}
+
+   
+.personne img {
+    width: 20%;
+    height: 20%;
+    object-fit: cover;
+}
+
+
+.obstacle{ 
+   width: 20px;
+   height: 20px;
+   background-color: black;
+  position:relative;
+  top:170px;
+  left:480px ;
+  border-radius:50% ;
+  animation: ballon 1.5s infinite;
+}
+
+@keyframes ballon {
+
+    0%{
+      left:480px;  
+    }
+    
+      100%{
+        left:-40px;  
+      }
+}
+.control{
+  margin-top: 20px;
+  text-align: center;
+
+}
+a,button{
+   padding:10px 50px ;
+   border-radius:4px ;
+   border: 0;
+   box-shadow: 0 0 50px rgba(0,0,0,0.1);
+   font-weight: bold;
+   cursor: pointer;
+   text-decoration:0 ;
+   background-color: #ffff;
+   font-size: 15px;
+   color:black;
+} 
